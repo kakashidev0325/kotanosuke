@@ -3017,26 +3017,27 @@ figcaption {
 }
 
 .button {
-  border: 2px solid var(--_primitives---opacity--neutral-darkest-60);
-  color: #000c;
+  border: 2px solid #9945ff66;
+  color: #fff;
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-shadow: 0 1px 1px #fffc;
-  background-image: radial-gradient(circle at 50% 0, #fadb4f, #ff9224);
+  text-shadow: 0 1px 2px #0009;
+  background-image: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
   border-radius: 16px;
   padding: 0.95rem 1.5rem;
   font-family: Obviously Narrbld, Impact, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 0.2s;
-  box-shadow: inset 0 2px 5px #fffc, inset 0 -2px #0006;
+  transition: transform 0.2s, filter 0.2s;
+  box-shadow: inset 0 2px 5px #ffffff40, inset 0 -2px #0006, 0 0 24px #9945ff40;
 }
 
 .button:hover {
-  background-image: radial-gradient(circle at 50% 0, #fabe4f, #ff6d24);
+  background-image: linear-gradient(135deg, #b06bff 0%, #3dffb0 100%);
   transform: scale(0.98);
+  filter: brightness(1.05);
 }
 
 .button.is-link {
@@ -3068,12 +3069,13 @@ figcaption {
 
 .button.is-secondary {
   background-color: var(--_primitives---opacity--transparent);
-  color: var(--_primitives---colors--neutral-darkest);
-  background-image: radial-gradient(circle at 50% 0, #fff, #b7e4ec);
+  color: #fff;
+  background-image: linear-gradient(135deg, #1a0b2e 0%, #0b2a22 100%);
+  border-color: #14f19566;
 }
 
 .button.is-secondary:hover {
-  background-image: radial-gradient(circle at 50% 0, #c2f1f5, #83ecff);
+  background-image: linear-gradient(135deg, #2a1550 0%, #0f3d32 100%);
 }
 
 .button.is-secondary.is-alternate {
@@ -4124,7 +4126,7 @@ figcaption {
 }
 
 .loader5_progress-bar {
-  background: #fdeac3;
+  background: linear-gradient(90deg, #9945ff, #14f195);
   width: 20%;
   height: 100%;
 }
@@ -4236,8 +4238,8 @@ figcaption {
 }
 
 .header81_component {
-  background-image: radial-gradient(circle, #fdeac3, #f8dbb0);
-  border-bottom: 1px solid #000;
+  background-image: radial-gradient(circle at 40% 20%, #9945ff55, #0b0b12 55%, #14f19522);
+  border-bottom: 1px solid #9945ff40;
   height: 300vh;
   position: relative;
 }
@@ -4429,12 +4431,10 @@ figcaption {
 .navbar13_container {
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
-  border: var(--_ui-styles---stroke--border-width) solid
-    var(--color-scheme-1--border);
-  box-shadow: 0 1px 0 1px var(--_primitives---colors--neutral-darkest);
-  background-color: #fff;
-  background-image: linear-gradient(#fff9, #fff9),
-    radial-gradient(circle at 50% 100%, #fff, #fff);
+  border: 1px solid #9945ff55;
+  box-shadow: 0 8px 32px #9945ff22, 0 1px 0 1px #14f19522;
+  background-color: #0b0b12f2;
+  background-image: linear-gradient(135deg, #1a0b2ef2, #0b0b12f2);
   border-radius: 0 0 0.5rem 0.5rem;
   grid-template-rows: auto;
   grid-template-columns: auto 1fr auto;
@@ -4444,6 +4444,8 @@ figcaption {
   height: auto;
   padding: 0.5rem;
   display: flex;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 .navbar13_logo-link {
@@ -4468,7 +4470,7 @@ figcaption {
 }
 
 .navbar13_menu-link-wrapper {
-  color: #000;
+  color: #f5f5f7;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-family: Obviously Narrbld, Impact, sans-serif;
@@ -4481,14 +4483,14 @@ figcaption {
 }
 
 .navbar13_link:hover {
-  color: #6620b6;
+  color: #14f195;
   text-underline-offset: 6px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
 
 .navbar13_link.w--current {
-  color: var(--_primitives---colors--neutral-darkest);
+  color: #14f195;
 }
 
 .navbar13_menu-dropdown {
@@ -4540,12 +4542,13 @@ figcaption {
 }
 
 .section_layout514 {
-  background-color: #fff2dd;
-  background-image: url("/cdn.prod.website-files.com/67de3fe6c6d38ae7d386c020/67e5d2bec07bec7817c2da81_texture-07.jpg");
+  background-color: #0b0b12;
+  background-image: linear-gradient(160deg, #1a0b2ecc, #0b0b12cc),
+    url("/cdn.prod.website-files.com/67de3fe6c6d38ae7d386c020/67e5d2bec07bec7817c2da81_texture-07.jpg");
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #9945ff40;
 }
 
 .layout514_component {
@@ -4692,8 +4695,8 @@ figcaption {
 }
 
 .layout420_content {
-  background-image: linear-gradient(#fdeac3, #f8dbb0);
-  border-bottom: 1px solid #000;
+  background-image: linear-gradient(160deg, #1a0b2e 0%, #0b0b12 50%, #06241c 100%);
+  border-bottom: 1px solid #9945ff40;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -4791,7 +4794,7 @@ figcaption {
   position: sticky;
   top: 0;
   overflow: hidden;
-  color: #fdeac3 !important;
+  color: #14f195 !important;
 }
 
 .layout488_heading {
@@ -4827,15 +4830,16 @@ figcaption {
   z-index: -1;
   outline-offset: 2px;
   -webkit-text-fill-color: inherit;
-  background-color: #c1fff7;
+  background-color: #14f195;
   background-image: url("/bg1.png");
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
   background-clip: border-box;
-  border: 1px solid #000;
+  border: 1px solid #9945ff;
   border-radius: 99999px;
-  outline: 2px solid #fff;
+  outline: 2px solid #14f19580;
+  box-shadow: 0 0 20px #14f19566;
   width: 4vh;
   height: 4vh;
   position: absolute;
@@ -4850,13 +4854,13 @@ figcaption {
 
 .section_layout456 {
   color: var(--color-scheme-1--text);
-  background-color: #fdeac3;
-  background-image: url("/bg1.png");
+  background-color: #0b0b12;
+  background-image: linear-gradient(160deg, #1a0b2ecc, #0b0b12cc), url("/bg1.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #9945ff40;
 }
 
 .layout456_content {
@@ -4942,8 +4946,9 @@ figcaption {
 }
 
 .layout517_component {
-  background-color: #fdeac3;
-  border-bottom: 1px solid #000;
+  background-color: #0b0b12;
+  background-image: radial-gradient(circle at 50% 30%, #9945ff33, #0b0b12 60%);
+  border-bottom: 1px solid #9945ff40;
   flex-direction: column;
   align-items: center;
   height: 200vh;
@@ -4999,7 +5004,7 @@ figcaption {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   color: var(--_primitives---colors--white);
-  background-color: #000416e6;
+  background-color: #0b0b12e6;
   border-radius: 32px 32px 0 0;
   flex-direction: column;
   grid-template-rows: auto;
@@ -5051,7 +5056,8 @@ figcaption {
 
 .footer17_component {
   color: var(--_primitives---colors--white);
-  background-color: #000416;
+  background-color: #0b0b12;
+  background-image: radial-gradient(circle at 80% 0%, #9945ff22, transparent 50%);
 }
 
 .footer17_top-wrapper {
@@ -5096,10 +5102,10 @@ figcaption {
 }
 
 .footer17_link:hover {
-  color: #b0b9ff;
+  color: #14f195;
   text-underline-offset: 3px;
-  -webkit-text-decoration: underline #404fc5;
-  text-decoration: underline #404fc5;
+  -webkit-text-decoration: underline #9945ff;
+  text-decoration: underline #9945ff;
   text-decoration-thickness: 2px;
 }
 
@@ -5140,7 +5146,7 @@ figcaption {
 
 .divider-horizontal {
   height: var(--_ui-styles---stroke--divider-width);
-  background-color: #192557;
+  background-color: #9945ff44;
   width: 100%;
 }
 
@@ -5174,8 +5180,8 @@ figcaption {
 
 .section_header139 {
   color: var(--color-scheme-1--text);
-  background-color: #d4dbff;
-  background-image: radial-gradient(circle, #fdeac3, #f8dbb0);
+  background-color: #0b0b12;
+  background-image: radial-gradient(circle at 50% 30%, #9945ff44, #0b0b12 55%, #14f19518);
 }
 
 .header139_component {
@@ -5517,17 +5523,18 @@ figcaption {
 }
 
 .token-cell {
-  border: 1px solid #0003;
+  border: 1px solid #9945ff44;
   padding: 16px 12px;
+  color: #f5f5f7;
 }
 
 .token-cell.cell-01 {
   text-align: center;
-  background-color: #ffffff80;
+  background-color: #9945ff22;
 }
 
 .token-cell.cell-02 {
-  background-color: #ffffff80;
+  background-color: #14f19518;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
@@ -5537,7 +5544,7 @@ figcaption {
 .token-cell.cell-bottom {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  background-color: #ffffff80;
+  background-color: #1a0b2ecc;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
@@ -5546,7 +5553,7 @@ figcaption {
 }
 
 .cell-label {
-  color: var(--_primitives---opacity--neutral-darkest-60);
+  color: #14f195;
   text-transform: uppercase;
   font-family: Lektorat, Arial, sans-serif;
   font-size: 1rem;
